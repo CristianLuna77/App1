@@ -1,0 +1,100 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<TabbedPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="App1.Ejercicio1">
+  <!--Pages can be added as references or inline-->
+    <ContentPage Title="Tab 1">
+        <StackLayout >
+            <Label 
+                Text="Metodo para adiviniar la fecha de cumpleanios"
+                FontAttributes="Bold"
+                FontSize="30"
+                HorizontalTextAlignment="Center"
+                                            />
+            <Button Margin="20,20,20,20"
+                    HorizontalOptions="Center"
+                    VerticalOptions="Center"
+                    TextColor="Black"
+                    BackgroundColor="RosyBrown"
+                    Text="Paso1" Clicked="Paso1" />
+            
+            <Button Margin="15,15,15,15"
+                    HorizontalOptions="Center"
+                    VerticalOptions="Center"
+                    TextColor="Black"
+                    BackgroundColor="BlanchedAlmond"
+                    Text="Paso2" Clicked="Paso2" />
+
+            <Button Margin="15,15,15,15"
+                    HorizontalOptions="Center"
+                    VerticalOptions="Center"
+                    TextColor="Black"
+                    BackgroundColor="Aquamarine"
+                    Text="Paso3" Clicked="Paso3" />
+            
+            <Button Margin="15,15,15,15"
+                    HorizontalOptions="Center"
+                    VerticalOptions="Center"
+                    TextColor="Black"
+                    BackgroundColor="YellowGreen"
+                    Text="Paso4" Clicked="Paso4" />
+
+
+            <Entry Margin="15,15,15,10"
+                   Placeholder="Ingresa el resultado"
+                   Keyboard="Numeric"
+                   x:Name="Resultado"
+                   HorizontalOptions="Center"
+                   VerticalOptions="Center"/>
+
+            <Button Text="VUUUAMOS!!!" 
+                    Clicked="Calcular"
+                    HorizontalOptions="Center"
+                   VerticalOptions="Center"/>
+        </StackLayout>
+    </ContentPage>
+
+    <ContentPage Title="Tab 2">
+        <StackLayout >
+            <Label 
+                Text="Adivinare el numero que estas pensando ;)"
+                FontAttributes="Bold"
+                FontSize="25"
+                HorizontalTextAlignment="Center"
+                                            />
+            <Button Margin="20,20,20,20"
+                    HorizontalOptions="Center"
+                    VerticalOptions="Center"
+                    TextColor="Black"
+                    BackgroundColor="RosyBrown"
+                    Text="Paso1" Clicked="nePaso1" />
+
+            <Button Margin="15,15,15,15"
+                    HorizontalOptions="Center"
+                    VerticalOptions="Center"
+                    TextColor="Black"
+                    BackgroundColor="BlanchedAlmond"
+                    Text="Paso2" 
+                    Clicked="nePaso2" />
+
+            <Button Margin="15,15,15,15"
+                    HorizontalOptions="Center"
+                    VerticalOptions="Center"
+                    TextColor="Black"
+                    BackgroundColor="Aquamarine"
+                    Text="Paso3" Clicked="nePaso3" />
+
+            <Entry Margin="15,15,15,10"
+                   Placeholder="Ingresa el resultado"
+                   Keyboard="Numeric"
+                   x:Name="neResultado"
+                   HorizontalOptions="Center"
+                   VerticalOptions="Center"/>
+
+            <Button Text="Lest Go" 
+                    Clicked="Button_Clicked"  
+                    HorizontalOptions="Center"
+                   VerticalOptions="Center"/>
+        </StackLayout>
+    </ContentPage>
+</TabbedPage>
